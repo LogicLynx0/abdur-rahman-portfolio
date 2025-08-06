@@ -1,13 +1,25 @@
 import React from 'react'
 
-const FaqSection = ({faqData}: any) => {
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+interface FaqSectionProps {
+  faqData: FaqItem[];
+  faqTitle: string;
+  faqDes: string;
+}
+
+const FaqSection = (props: FaqSectionProps) => {
+  const { faqData, faqTitle, faqDes } = props;
   return (
     <div>
         <section className="py-20 bg-slate-800/50">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                   <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold mb-4">Frequently Asked Questions</h2>
-                    <p className="text-xl text-gray-300">Everything you need to know</p>
+                    <h2 className="text-4xl font-bold mb-4">{faqTitle}</h2>
+                    <p className="text-xl text-gray-300">{faqDes}</p>
                   </div>
                   
                   <div className="space-y-6">

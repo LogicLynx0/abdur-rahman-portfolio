@@ -1,4 +1,5 @@
 
+import { githubUrl, linkedInProfileLink } from '@/lib/configurations';
 import Link from 'next/link';
 import React from 'react';
 
@@ -33,7 +34,7 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
             <div className="space-y-2">
               <a 
-                href="https://github.com" 
+                href={githubUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block text-gray-400 hover:text-white transition-colors"
@@ -41,7 +42,7 @@ export const Footer = () => {
                 GitHub
               </a>
               <a 
-                href="https://linkedin.com" 
+                href={linkedInProfileLink} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block text-gray-400 hover:text-white transition-colors"

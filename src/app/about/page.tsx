@@ -30,7 +30,7 @@ const About = () => {
       <LearningJourneySection />
 
       {/* FAQ Section */}
-      <FaqSection faqData={aboutPageFaq} />
+      <FaqSection faqData={aboutPageFaq} faqTitle='Frequently Asked Questions' faqDes='Everything you need to know' />
     </div>
   );
 };

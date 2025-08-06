@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/ui/Navbar";
 import { Footer } from "@/components/ui/Footer";
+import FloatingLinkedIn from "@/components/ui/FloatingLinkedIn";
 
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <FloatingLinkedIn />
         <Footer />
       </body>
     </html>
